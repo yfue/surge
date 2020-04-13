@@ -1,0 +1,9 @@
+#!name= WorkingCopy Premium
+#!desc= JavaScript and hostname of WorkingCopy
+#!system=ios
+
+[MITM]
+hostname = %APPEND% education.github.com
+
+[Script]
+WorkingCopy Premium = type=http-response,pattern=^https:\/\/education\.github\.com\/api\/user$,requires-body=1,max-size=0,script-path=JavaScript/workingcopy.js

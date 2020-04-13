@@ -1,0 +1,9 @@
+#!name= Xichuangzhu Premium
+#!desc= JavaScript and hostname of Xichuangzhu
+#!system=ios
+
+[MITM]
+hostname = %APPEND% avoscloud.com
+
+[Script]
+Xichuangzhu Premium = type=http-response,pattern=^https:\/\/avoscloud\.com\/1\.1\/users\/,requires-body=1,max-size=0,script-path=JavaScript/xcz.js

@@ -1,0 +1,12 @@
+#!name= Toutiao Hijack
+#!desc= All Hijack of Toutiao
+#!system=ios
+
+[Rule]
+URL-REGEX,^https:\/\/s\d+[a]{\0\1}\.pstatp\.com\/bytecom\/resource\/track_log\/src\/toutiao-track-log\.js\?ad_id=\d+$,REJECT-TINYGIF
+
+[MITM]
+hostname = %APPEND% *.snssdk.com
+
+[Script]
+Toutiao = type=http-response,pattern=https?://[\s\S]*\.snssdk\.com/api/news/feed/v88/,requires-body=1,max-size=0,script-path=https://Choler.github.io/Surge/Script/Toutiao.js,script-update-interval=0

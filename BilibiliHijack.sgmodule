@@ -9,4 +9,4 @@ URL-REGEX,^https:\/\/ap(p|i)\.bilibili\.com\/(pgc\/season\/rank\/cn|x\/v2\/(dm\/
 hostname = %APPEND% ap*.bilibili.com
 
 [Script]
-Bilibili Hijack = type=http-response,pattern=^https?:\/\/ap(i|p).bilibili.com\/x\/(resource\/show\/tab|v2\/(reply\/main|view\/material|account\/mine|view|feed\/index))\?access_key,requires-body=1,max-size=262144,script-path=https://raw.githubusercontent.com/primovist/ScriptsForSurge/master/Scripts/Bilibili.js,script-update-interval=86400
+Bilibili Hijack = type=http-response,pattern=^https?:\/\/ap(i|p).bilibili.com\/x\/(resource\/show\/tab|v2\/(reply\/main|view\/material|account\/mine|view|feed\/index))\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/primovist/ScriptsForSurge/master/Scripts/Bilibili.js,script-update-interval=86400

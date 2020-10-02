@@ -2,6 +2,9 @@
 #!desc=今日头条去广告
 #!system=ios
 
+[Rule]
+URL-REGEX,^https:\/\/s\d+[a]{\0\1}\.pstatp\.com\/bytecom\/resource\/track_log\/src\/toutiao-track-log\.js\?ad_id=\d+$,REJECT-TINYGIF
+
 [Script]
 今日头条去广告 = type=http-response,pattern=^https?://[\s\S]*\.snssdk\.com/api/news/feed/v88/,requires-body=1,max-size=262144,script-path=https://Choler.github.io/Surge/Script/Toutiao.js,script-update-interval=0
 

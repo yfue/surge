@@ -6,4 +6,4 @@
 hostname = %APPEND% avoscloud.com
 
 [Script]
-Xichuangzhu Premium = type=http-response,pattern=^https:\/\/avoscloud\.com\/1\.1\/users\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zjcfynn/surge/Module/xcz.js
+Xichuangzhu = type=http-response,pattern=^https:\/\/avoscloud\.com\/1\.1\/users\/,requires-body=1,max-size=0,script-path=https://github.com/zjcfynn/surge/raw/Module/xcz.js

@@ -1,0 +1,16 @@
+# NAME: Youtube
+# UPDATE: 2020-10-10 16:48:42
+DOMAIN,youtubei.googleapis.com
+DOMAIN-SUFFIX,googlevideo.com
+USER-AGENT,com.google.ios.youtube*
+USER-AGENT,com.google.ios.youtubemusic*
+USER-AGENT,youtube*
+USER-AGENT,youtubemusic*
+USER-AGENT,*youtube*
+USER-AGENT,YouTube*
+DOMAIN-KEYWORD,youtube
+DOMAIN,yt3.ggpht.com
+DOMAIN-SUFFIX,app-measurement.com
+DOMAIN-SUFFIX,gvt2.com
+DOMAIN-SUFFIX,youtu.be
+DOMAIN-SUFFIX,ytimg.com

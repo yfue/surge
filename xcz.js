@@ -9,8 +9,5 @@ var obj = JSON.parse($response.body);
     obj.mobilePhoneVerified=true;
 $done({ body: JSON.stringify(obj) });
 
-//$notify("会员已开启", "很好古诗古文化的软件，如果觉得好请务必充值支持，谢谢","仅个人尝试，禁止牟利");
-
 /**
- * @supported F3F1280E2817 44243A07
  */

@@ -1,20 +1,16 @@
-/*
-[rewrite_local]
-#西窗烛 （by黑黑酱）
-^https:\/\/avoscloud\.com\/1\.1\/users\/ url script-response-body xcz.js
+// 很好古诗古文化的软件，已充值支持，只是想破解玩玩，强烈建议充值一点支持
 
-Surge 4.0 ：https://avoscloud.com/1.1/users
+var obj = JSON.parse($response.body);
+    obj.isAdmin=true;
+    obj.lifetimeMembership=true;
+    obj.bindWechat=true;
+    obj.membership=true;
+    obj.emailVerified=true;
+    obj.mobilePhoneVerified=true;
+$done({ body: JSON.stringify(obj) });
 
-[MITM]
-hostname:avoscloud.com
+//$notify("会员已开启", "很好古诗古文化的软件，如果觉得好请务必充值支持，谢谢","仅个人尝试，禁止牟利");
 
-*/
-
-var body = $response.body; 
-var obj = JSON.parse(body); 
-
-obj.lifetimeMembership = true;
-obj.membership = true;
-
-body = JSON.stringify(obj); 
-$done(body);
+/**
+ * @supported F3F1280E2817 44243A07
+ */

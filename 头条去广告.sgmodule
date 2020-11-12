@@ -1,0 +1,20 @@
+#!name= 头条去广告
+#!desc=头条去广告 URL Rewrite 部分
+#!system=ios
+
+[URL Rewrite]
+# > 今日头条
+^https?://api\w-normal-c-hl\.snssdk\.com/share_strategy/v.*/info/ https://is.snssdk.com/2/article/fu*ku/ header
+^https?://api\w-normal-c-hl\.snssdk\.com/video/app/article/information/v.*/ https://is.snssdk.com/2/article/fu*ku/ header
+^https?://(is|api\w-normal-c-hl)\.snssdk\.com/\w/article/(slow_information|information)/v.*/ https://is.snssdk.com/2/article/fu*ku/ header
+^https?:\/\/sf\w-ttcdn-tos\.pstatp\.com\/(obj|img)\/web\.business\.image - reject
+^https?:\/\/sf\w-ttcdn-tos\.pstatp\.com\/(obj|img)\/toutiao-cdn\/webp - reject
+^https?:\/\/sf.*?-ttcdn-tos\.pstatp\.com\/(obj|img)\/ad - reject
+^https?:\/\/s\w\.pstatp\.com\/inapp\/TTAdblock\.css - reject
+^https?:\/\/sf\w-ttcdn-tos\.pstatp\.com\/(obj|img)\/mosaic-legacy - reject
+^https?:\/\/sf\w-be-pack\.pglstatp-toutiao\.com\/(obj|img)\/web\.business\.image - reject
+^https?:\/\/sf\w-ttcdn-tos\.pstatp\.com\/(obj|img)\/ios-timor-buket - reject
+^https:\/\/sf\w-ttcdn-tos\.pstatp\.com\/obj\/card-platform - reject
+
+[MITM]
+hostname = %APPEND% *-ttcdn-tos.pstatp.com,is.snssdk.com,api*-normal-c-hl.snssdk.com

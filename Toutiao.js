@@ -1,7 +1,6 @@
 /*
 [Script]
-
-Toutiao = type=http-response,pattern=^https:\/\/api\w-normal-c-hl\.snssdk\.com\/api(\/news)?\/feed(\/thread_aggr)?\/v.*\/,requires-body=1,max-size=524288,script-path=https://Choler.github.io/Surge/Script/Toutiao.js
+Toutiao = type=http-response,pattern=^https:\/\/api\w-normal-c-hl\.snssdk\.com\/api(\/news)?\/feed(\/thread_aggr)?\/v.*\/,requires-body=1,max-size=524288,script-path=https://github.com/zjcfynn/surge/raw/Module/Toutiao.js
 
 [MITM]
 hostname = api*-normal-c-hl.snssdk.com

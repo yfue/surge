@@ -9,10 +9,9 @@
 ^https?://api\w-normal-c-hl.snssdk.com/share_strategy/v.*/info/ data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
 ^https?://(is|api\w-normal-c-hl).snssdk.com/\w/article/(slow_information|information)/v.*/ data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
 ^https?://api\w-normal-c-hl.snssdk.com/wenda/v.*/answer/information/ data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
-^https?:\/\/frontier\.snssdk\.com\/ data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank.gif"
 
 [MITM]
-hostname = %APPEND% api*-normal-c-hl.snssdk.com,is.snssdk.com,frontier.snssdk.com
+hostname = %APPEND% api*-normal-c-hl.snssdk.com,is.snssdk.com
 
 [Script]
 Toutiao = type=http-response,pattern=^https:\/\/api\w-normal-c-hl\.snssdk\.com\/api(\/news)?\/feed(\/thread_aggr)?\/v.*\/,requires-body=1,max-size=524288,script-path=https://github.com/yfue/surge/raw/Module/Toutiao.js

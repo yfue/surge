@@ -8,7 +8,7 @@
 ^https?://api\w-normal-c-hl.snssdk.com/share_strategy/v.*/info/ data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
 ^https?://(is|api\w-normal-c-hl).snssdk.com/\w/article/(slow_information|information)/v.*/ data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
 ^https?://api\w-normal-c-hl.snssdk.com/wenda/v.*/answer/information/ data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
-^https?://api\w-normal-c-hl.snssdk.com/api/news/feed/v64/ data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
+# ^https?://api\w-normal-c-hl.snssdk.com/api/news/feed/v64/ data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
 
 [MITM]
 hostname = %APPEND% api*-normal-c-hl.snssdk.com,is.snssdk.com

@@ -185,10 +185,10 @@ let magicJS = MagicJS(scriptName, "INFO");
               element["card_type"] === "slot_event_card" ||
               element.hasOwnProperty("ad") ||
               // 取消以下两行注释，推荐列表拦截视频与直播
-              // element["extra"]["type"] === "drama" ||
-              // element["extra"]["type"] === "zvideo" ||
+              element["extra"]["type"] === "drama" ||
+              element["extra"]["type"] === "zvideo" ||
               // 取消以下注释，推荐列表拦截“盐选推荐”
-              // IsYanXuan(element) ||
+              IsYanXuan(element) ||
               // 注释下行，推荐列表关闭关键字屏蔽功能
               IsKeywordBlock(element)
             );

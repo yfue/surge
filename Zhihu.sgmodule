@@ -17,7 +17,6 @@ RULE-SET, https://github.com/blackmatrix7/ios_rule_script/raw/master/script/zhih
 # 屏蔽消息页面上拉的用户精选
 ^https?:\/\/api\.zhihu\.com/moments/hybrid\? data="https://github.com/blackmatrix7/ios_rule_script/raw/master/blank/blank_dict.json"
 
-
 [Script]
 知乎_处理用户信息 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/people\/,script-path= https://github.com/yfue/surge/raw/Module/zhihu_plus.js
 知乎_信息流去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.zhihu\.com\/(moments|topstory)(\/|\?)?(recommend|action=|feed_type=)(?!\/people),script-path= https://github.com/yfue/surge/raw/Module/zhihu_plus.js

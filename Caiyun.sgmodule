@@ -1,9 +1,0 @@
-#!name= 彩云天气
-#!desc= 彩云天气_SVIP
-#!system=ios
-
-[Script]
-Caiyun = type=http-response,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),requires-body=1,max-size=16384,script-path=https://github.com/yfue/surge/raw/Module/caiyun.js
-
-[MITM]
-hostname = %APPEND% biz.caiyunapp.com

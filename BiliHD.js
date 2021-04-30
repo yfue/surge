@@ -1,16 +1,10 @@
 /*
 bilibili fan drama open 1080P+
 
-By @Macsuny
-Modified from NobyDa
-
-QX:
-https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)) url script-response-body https://raw.githubusercontent.com/Sunert/Scripts/master/Script/Bilibili/BiliHD.js
-
 Surge4：
-http-response https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Script/Bilibili/BiliHD.js
+http-response https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)) requires-body=1,max-size=0,script-path= https://github.com/yfue/surge/raw/Module/BiliHD.js
 
-Surge & QX MITM = api.bilibili.com
+Surge & QX MITM = ap*.bilibili.com
 */
 
 var body = $response.body;

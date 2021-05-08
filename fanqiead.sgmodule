@@ -1,0 +1,15 @@
+#!name=Bilibili
+#!desc=BiliBili去广告
+#!system=ios
+
+[URL Rewrite]
+^https?:\/\/(reading-hl|i-hl)\.snssdk.com\/api\/ad\/.+ - reject
+^https?:\/\/.+\.pstatp\.com\/obj\/web\.business\.image\/.+ - reject
+^https?:\/\/.+\.pglstatp-toutiao\.com\/obj\/ad-app-package\/.+ - reject
+^https?:\/\/.+\.pstatp\.com\/obj\/img-cut-tos\/.+ - reject
+^https?:\/\/.+\.byteimg\.com\/tos-cn-i-0000\/.+ - reject
+^https?:\/\/.+\.pstatp\.com\/bytecom\/resource\/track_log\/src\/.+ - reject
+^https:\/\/i\.snssdk\.com\/video\/play\/1\/toutiao\/.+\/mp4 - reject
+
+[MITM]
+hostname = %APPEND% reading-hl.snssdk.com,i-hl.snssdk.com,sf1-ttcdn-tos.pstatp.com,sf6-be-pack.pglstatp-toutiao.com,i.snssdk.com

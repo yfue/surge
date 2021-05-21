@@ -185,7 +185,7 @@ let magicJS = MagicJS(scriptName, "INFO");
               element["card_type"] === "slot_event_card" ||
               element.hasOwnProperty("ad") ||
               // 取消以下两行注释，推荐列表拦截视频与直播
-              element["extra"]["type"] === "drama" ||
+              element["brief"]["type"] === "drama" ||
               element["brief"]["type"] === "zvideo" ||
               // 取消以下注释，推荐列表拦截“盐选推荐”
               IsYanXuan(element) ||

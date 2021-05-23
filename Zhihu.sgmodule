@@ -4,7 +4,7 @@
 
 [Rule]
 # 知乎广告拦截
-RULE-SET, https://github.com/blackmatrix7/ios_rule_script/raw/master/script/zhihu/zhihu_remove_ads.list, REJECT-DROP
+RULE-SET, https://github.com/blackmatrix7/ios_rule_script/raw/master/script/zhihu/zhihu_remove_ads.list, REJECT
 
 [URL Rewrite]
 # 知乎下发的配置，如皮肤等，目前已知会导致Tab页管理功能失效
